@@ -1,0 +1,32 @@
+.projects {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: var(--secondary);
+  color: var(--white);
+  padding-top: 5em;
+  overflow-y: scroll;
+}
+.projects .title {
+  text-align: center;
+  font-size: 2.3em;
+  letter-spacing: 2px;
+}
+.projects .title span {
+  color: var(--primary);
+}
+.projects p {
+  text-align: center;
+  font-size: 1.2em;
+  letter-spacing: 0.4px;
+  margin-top: 0.6em;
+}
+
+.p-container {
+  width: 100%;
+  padding: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4.3em 2.9em;
+}

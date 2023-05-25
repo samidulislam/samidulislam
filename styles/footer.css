@@ -1,0 +1,30 @@
+.footer {
+  width: 100%;
+  background: var(--secondary);
+  color: var(--white);
+  padding: 5em 0 2em;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.2em;
+  text-align: center;
+  border-top: 1px solid var(--light);
+  padding-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer span {
+  font-size: 1.6em;
+  margin-right: 0.2em;
+}
+
+
+@media (max-width: 768px) {
+  .footer span {
+    font-size: inherit;
+    margin-right: unset;
+  }
+}

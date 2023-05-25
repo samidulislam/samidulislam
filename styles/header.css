@@ -1,0 +1,93 @@
+.header {
+  width: 100%;
+  height: 60px;
+  background: var(--secondary);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4em;
+  position: relative;
+  top: 0;
+  left: 0;
+  user-select: none;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .logo span {
+  font-size: 1.6em;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--primary);
+}
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.header nav a {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.15em;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.header nav a:hover,
+.active {
+  color: var(--primary);
+}
+.header nav a svg {
+  font-size: 1.5em;
+}
+.header nav a span {
+  font-size: 1.2em;
+}
+.header nav a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+.header nav a:hover::before {
+  width: 100%;
+}
+
+.header .toggle-menu {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+  z-index: 9;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .header {
+    padding: 0 3em;
+  }
+  .header nav {
+    display: none;
+  }
+  .toggle-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    display: flex !important;
+    flex-direction: column;
+    background: var(--secondary);
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+  .header .toggle-menu {
+    display: block;
+  }
+}

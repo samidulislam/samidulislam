@@ -1,0 +1,141 @@
+.about {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: var(--secondary);
+  color: var(--white);
+  overflow-y: scroll;
+}
+
+.about .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about .top .title,
+.title {
+  font-size: 2.2em;
+  font-weight: 500;
+  margin-top: 3em;
+}
+.about .top .title span,
+.title span {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.top-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 4em;
+}
+
+.left {
+  flex: 1;
+}
+.left p {
+  font-size: 1.135em;
+  margin-bottom: 1.4em;
+  line-height: 1.4em;
+}
+.left p span {
+  color: var(--primary);
+}
+.left > span {
+  font-size: 1.13em;
+}
+.left ul {
+  margin-top: 1.2em;
+  padding-left: 3em;
+}
+.left ul li {
+  font-size: 1.1em;
+}
+
+.right {
+  flex: 1;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right img {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+}
+
+/* professional-skills */
+.professional-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.professional-skills .title {
+  margin-top: 2em !important;
+}
+
+.skills-container {
+  width: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+  gap: 2em;
+  padding: 3em 7em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.skills-container .item {
+  width: 100%;
+  max-width: 140px;
+  padding: 1em 2em;
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 7px var(--primary);
+  transition: all 0.4s ease;
+}
+.skills-container .item:hover {
+  transform: scale(1.1);
+}
+
+.skills-container .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 840px) {
+  .skills-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-wrapper {
+    flex-direction: column;
+    padding: 2em;
+    gap: 5em;
+  }
+  .skills-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
