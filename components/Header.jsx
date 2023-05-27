@@ -35,10 +35,6 @@ const Header = () => {
           <AiOutlineFundProjectionScreen />
           <span>Projects</span>
         </Link>
-        <Link href={"/contact"}>
-          <AiOutlinePhone />
-          <span>Contact</span>
-        </Link>
       </nav>
       {/* Toggle Navbar */}
       {clicked === false ? (
